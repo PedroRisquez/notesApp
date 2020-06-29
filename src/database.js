@@ -12,7 +12,7 @@ mongoose
   .then(db => console.log("DB is connected")) */
 
 
-mongoose.connect('mongodb://localhost/notes_db_app',{
+mongoose.connect('mongodb+srv://root:root@cluster0-warly.mongodb.net/notes_db_app?retryWrites=true&w=majority',{
     useCreateIndex:true,
     useNewUrlParser:true,
     useFindAndModify:false,
