@@ -12,7 +12,7 @@ mongoose
   .then(db => console.log("DB is connected")) */
 
 
-mongoose.connect('mongodb+srv://root:root@cluster0-warly.mongodb.net/notes_db_app?retryWrites=true&w=majority',{
+mongoose.connect('mongodb://root:root@cluster0-shard-00-00-warly.mongodb.net:27017,cluster0-shard-00-01-warly.mongodb.net:27017,cluster0-shard-00-02-warly.mongodb.net:27017/notes_db_app?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority',{
     useCreateIndex:true,
     useNewUrlParser:true,
     useFindAndModify:false,
